@@ -25,8 +25,10 @@ Responsive fitness club website created by **Yelnur Akhmetzhan, Akejan Ahmetov a
 | Locations | Nine-image carousel, three-column grid (`col-lg-4`), `container-fluid` |
 | Contact | Bootstrap form with JavaScript validation, phone validation and consent |
 | Account | LocalStorage sign up, log in and redirect to the profile page |
-| Profile | Displays the saved demo user and provides logout |
+| Profile | Displays the saved demo user, membership status, quick links and logout |
 | Locations | Open-Meteo weather API request with loading and error states |
+
+Illustrations have matching light-theme variants in `images/light/`; the theme script swaps them together with the page colors. Team photos stay unchanged in both themes.
 
 ## Technologies
 
