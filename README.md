@@ -10,8 +10,8 @@ Responsive fitness club website created by **Yelnur Akhmetzhan and Alikhan Yerta
 
 | Member | Role | Pages |
 | --- | --- | --- |
-| Yelnur Akhmetzhan | Frontend Developer | `index.html`, `about.html` |
-| Alikhan Yertaiuly | Content & QA Developer | `locations.html`, `contact.html` |
+| Yelnur Akhmetzhan | Frontend Developer | `index.html`, `about.html`, `auth.html`, `profile.html` |
+| Alikhan Yertaiuly | Content & QA Developer | `prices.html`, `trainers.html`, `locations.html`, `contact.html` |
 
 ## Page features
 
