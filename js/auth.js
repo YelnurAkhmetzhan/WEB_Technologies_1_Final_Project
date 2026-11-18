@@ -42,6 +42,9 @@
     if (!user) { window.location.href = "auth.html"; return; }
     profileName.textContent = user.name;
     document.getElementById("profile-email").textContent = user.email;
+    const avatar = document.getElementById("profile-avatar");
+    if (avatar) avatar.textContent = user.name.split(/\s+/).map((part) => part[0]).join("").slice(0, 2).toUpperCase();
     document.getElementById("logout-btn").addEventListener("click", () => { localStorage.removeItem("gg-current-user"); window.location.href = "auth.html"; });
   }
 })();
+
