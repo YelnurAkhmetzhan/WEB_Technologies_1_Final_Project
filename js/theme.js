@@ -7,6 +7,13 @@
   const colourButton = document.getElementById("bg-color-btn");
   if (!button) return;
 
+  const imageMap = new Map();
+  document.querySelectorAll('img[src^="images/"]').forEach((image) => {
+    if (!image.src.endsWith(".svg")) return;
+    const fileName = image.getAttribute("src").split("/").pop();
+    imageMap.set(image, fileName);
+  });
+
   let isDay = false;
   try {
     isDay = localStorage.getItem("gg-theme") === "day";
@@ -18,6 +25,9 @@
     document.body.classList.toggle("theme-day", isDay);
     button.textContent = isDay ? "Switch to Night" : "Switch to Day";
     button.setAttribute("aria-pressed", String(isDay));
+    imageMap.forEach((fileName, image) => {
+      image.src = isDay ? `images/light/${fileName}` : `images/${fileName}`;
+    });
     /* the background colour picker only makes sense on the dark theme */
     if (colourButton) {
       colourButton.disabled = isDay;
@@ -38,3 +48,4 @@
 
   applyTheme();
 })();
+
