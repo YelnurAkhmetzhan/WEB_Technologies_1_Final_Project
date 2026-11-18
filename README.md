@@ -24,7 +24,7 @@ Responsive fitness club website created by **Yelnur Akhmetzhan, Akejan Ahmetov a
 | Contact | Bootstrap form with JavaScript validation, phone validation and consent |
 | Account | LocalStorage sign up, log in and redirect to the profile page |
 | Profile | Displays the saved demo user and provides logout |
-| Locations | REST Countries API request with loading and error states |
+| Locations | Open-Meteo weather API request with loading and error states |
 
 ## Technologies
 
