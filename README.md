@@ -1,6 +1,6 @@
 # Gold Gym - Team Project
 
-Responsive fitness club website created by **Yelnur Akhmetzhan, Akejan Ahmetov and Alikhan Yertaiuly** (AITU, SE-2504).
+Responsive fitness club website created by **Yelnur Akhmetzhan and Alikhan Yertaiuly** (AITU, SE-2504).
 
 **Live site:** https://yelnurakhmetzhan.github.io/WEB_Technologies_1_Final_Project/
 
@@ -11,7 +11,6 @@ Responsive fitness club website created by **Yelnur Akhmetzhan, Akejan Ahmetov a
 | Member | Role | Pages |
 | --- | --- | --- |
 | Yelnur Akhmetzhan | Frontend Developer | `index.html`, `about.html` |
-| Akejan Ahmetov | UI & CSS Developer | `prices.html`, `trainers.html` |
 | Alikhan Yertaiuly | Content & QA Developer | `locations.html`, `contact.html` |
 
 ## Page features
@@ -58,8 +57,6 @@ Semantic `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`; `alt`
 | --- | --- | --- | --- |
 | 1. Form validation (name, email, password length, confirmation, message, consent) | `js/validation.js` | `contact.html` | Alikhan Yertaiuly |
 | 2. FAQ accordion with smooth transition | `js/accordion.js` | `prices.html` | Yelnur Akhmetzhan |
-| 3. Popup subscription form | `js/popup.js` | button "Subscribe" on every page | Akejan Ahmetov |
-| 4. Change background colour | `js/background.js` | button on every page | Akejan Ahmetov |
 | 5. Current date and time | `js/datetime.js` | tools bar on every page | Yelnur Akhmetzhan |
 
 ## Assignment 5 - Advanced JavaScript and DOM manipulation
@@ -87,9 +84,6 @@ jQuery 3.7.1 (`js/vendor/jquery-3.7.1.min.js`) is loaded on every page, followed
 | 1. Reading progress bar and back-to-top button | `js/jq-core.js` | every page | Yelnur Akhmetzhan |
 | 2. Toast notifications (`GGToast`) | `js/jq-core.js` | every page | Yelnur Akhmetzhan |
 | 3. Animated statistics counters | `js/jq-counters.js` | `index.html` | Yelnur Akhmetzhan |
-| 4. Live coach search with highlighting | `js/jq-trainers.js` | `trainers.html` | Akejan Ahmetov |
-| 5. Coach details with `slideToggle` | `js/jq-trainers.js` | `trainers.html` | Akejan Ahmetov |
-| 6. Monthly / yearly price switch | `js/jq-prices.js` | `prices.html` | Akejan Ahmetov |
 | 7. Click a table row to choose a plan | `js/jq-prices.js` | `prices.html` | Alikhan Yertaiuly |
 | 8. FAQ expand all / collapse all | `js/jq-prices.js` | `prices.html` | Alikhan Yertaiuly |
 | 9. Contact form: character counter and phone field | `js/jq-contact.js` | `contact.html` | Alikhan Yertaiuly |
