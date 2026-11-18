@@ -25,6 +25,7 @@
     document.body.classList.toggle("theme-day", isDay);
     button.textContent = isDay ? "Switch to Night" : "Switch to Day";
     button.setAttribute("aria-pressed", String(isDay));
+    if (colourButton) colourButton.disabled = false;
     imageMap.forEach((fileName, image) => {
       image.src = isDay ? `images/light/${fileName}` : `images/${fileName}`;
     });
@@ -35,7 +36,7 @@
   button.addEventListener("click", () => {
     isDay = !isDay;
     applyTheme();
-    GGSound.play("click");
+    if (window.GGSound && typeof window.GGSound.play === "function") window.GGSound.play("click");
     try {
       localStorage.setItem("gg-theme", isDay ? "day" : "night");
     } catch (error) {
