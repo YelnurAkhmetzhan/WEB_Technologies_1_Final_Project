@@ -20,6 +20,7 @@
   }
   function applyBackground() {
     document.documentElement.style.setProperty("--page-background", getColors()[index]);
+    button.disabled = false;
   }
   document.addEventListener("gg-theme-change", applyBackground);
   applyBackground();
