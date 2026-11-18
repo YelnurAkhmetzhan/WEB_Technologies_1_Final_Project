@@ -29,6 +29,7 @@
       image.src = isDay ? `images/light/${fileName}` : `images/${fileName}`;
     });
     if (colourButton) colourButton.title = "Change the page background colour";
+    document.dispatchEvent(new CustomEvent("gg-theme-change"));
   }
 
   button.addEventListener("click", () => {
