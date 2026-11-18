@@ -57,6 +57,12 @@ p {
 .navbar .nav-link:hover {
   color: var(--gold);
 }
+.nav-tools {
+  align-items: center;
+}
+.nav-tools .btn {
+  white-space: nowrap;
+}
 .hero {
   background: linear-gradient(120deg, #17140f, #241e14);
 }
@@ -378,16 +384,36 @@ body.theme-day {
   background-color: var(--bg) !important; /* wins over the colour set by background.js */
 }
 body.theme-day .site-header {
-  background: #17140ff2;
+  background: #e8ddc7 !important;
+  border-bottom-color: #c7b78f;
+}
+body.theme-day .site-header .navbar {
+  background: #e8ddc7 !important;
 }
 body.theme-day .logo,
 body.theme-day .navbar .nav-link.active,
 body.theme-day .navbar .nav-link:hover {
-  color: #c7a046;
+  color: #76591a;
 }
 body.theme-day .logo span,
 body.theme-day .navbar .nav-link {
-  color: #ede7d9;
+  color: #3e3423;
+}
+body.theme-day .navbar .nav-link:hover {
+  color: #76591a;
+}
+body.theme-day .navbar-toggler {
+  border-color: #9c8656;
+}
+body.theme-day .navbar-toggler-icon {
+  filter: invert(25%) sepia(18%) saturate(700%) hue-rotate(5deg);
+}
+body.theme-day .nav-tools .btn-outline-warning {
+  --bs-btn-color: #5b4517;
+  --bs-btn-border-color: #9b7a31;
+  --bs-btn-hover-bg: #d4c19c;
+  --bs-btn-hover-border-color: #76591a;
+  --bs-btn-hover-color: #2a2418;
 }
 body.theme-day .hero {
   background: linear-gradient(120deg, #fffaf0, #efe4c7);
@@ -786,6 +812,12 @@ body.theme-day .star.active {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .nav-tools {
+    margin-top: 0.75rem;
+    padding-bottom: 0.25rem;
   }
 }
 
