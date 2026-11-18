@@ -9,9 +9,10 @@
   --cream: #ede7d9;
   --muted: #c7c0b2;
   --line: #514735;
+  --page-background: var(--bg);
 }
 body {
-  background: var(--bg);
+  background-color: var(--page-background);
   color: var(--cream);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -381,7 +382,7 @@ body.theme-day {
   --line: #d6c9aa;
   --bs-link-color-rgb: 138, 106, 28;
   --bs-link-hover-color-rgb: 90, 68, 10;
-  background-color: var(--bg) !important; /* wins over the colour set by background.js */
+  background-color: var(--page-background, var(--bg)) !important;
 }
 body.theme-day .site-header {
   background: #e8ddc7 !important;
