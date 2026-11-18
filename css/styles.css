@@ -51,6 +51,7 @@ p {
 }
 .navbar .nav-link {
   color: var(--cream);
+  margin-inline: 0.2rem;
 }
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
