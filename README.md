@@ -2,7 +2,9 @@
 
 Responsive fitness club website created by **Yelnur Akhmetzhan, Akejan Ahmetov and Alikhan Yertaiuly** (AITU, SE-2504).
 
-**Live site:** https://alikhan960.github.io/assignment-6-web/index.html
+**Live site:** https://yelnurakhmetzhan.github.io/WEB_Technologies_1_Final_Project/
+
+**Repository:** https://github.com/YelnurAkhmetzhan/WEB_Technologies_1_Final_Project
 
 ## Team and pages
 
@@ -42,7 +44,7 @@ js/
 
 ## How to run
 
-Open `index.html` in a browser (internet is needed for Bootstrap and the country API), or publish the `gold-gym-team` folder with GitHub Pages. All project files use relative paths.
+Open `index.html` in a browser (internet is needed for Bootstrap and the Open-Meteo API), or publish the `gold-gym-team` folder with GitHub Pages. All project files use relative paths.
 
 ## Accessibility
 
@@ -92,3 +94,4 @@ jQuery 3.7.1 (`js/vendor/jquery-3.7.1.min.js`) is loaded on every page, followed
 | 10. Team cards fade effect | `js/jq-about.js` | `about.html` | Yelnur Akhmetzhan |
 
 All new styling is in `css/styles.css` (section "Assignment 6"); no inline styles or scripts in the HTML.
+
