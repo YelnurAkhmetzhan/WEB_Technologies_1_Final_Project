@@ -11,7 +11,7 @@
 
   try {
     var saved = parseInt(localStorage.getItem("gg-bg-index"), 10);
-    if (!isNaN(saved) && saved >= 0 && saved < colors.length) index = saved;
+    if (!isNaN(saved) && saved >= 0 && saved < darkColors.length) index = saved;
   } catch (e) {
     /* storage unavailable - ignore */
   }
@@ -26,7 +26,7 @@
   applyBackground();
 
   button.addEventListener("click", function () {
-    index = (index + 1) % colors.length;
+    index = (index + 1) % darkColors.length;
     applyBackground();
     try {
       localStorage.setItem("gg-bg-index", String(index));
