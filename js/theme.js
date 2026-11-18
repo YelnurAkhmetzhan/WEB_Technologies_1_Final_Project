@@ -28,11 +28,7 @@
     imageMap.forEach((fileName, image) => {
       image.src = isDay ? `images/light/${fileName}` : `images/${fileName}`;
     });
-    /* the background colour picker only makes sense on the dark theme */
-    if (colourButton) {
-      colourButton.disabled = isDay;
-      colourButton.title = isDay ? "Available in Night mode" : "";
-    }
+    if (colourButton) colourButton.title = "Change the page background colour";
   }
 
   button.addEventListener("click", () => {
