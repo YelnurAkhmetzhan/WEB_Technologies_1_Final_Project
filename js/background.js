@@ -18,11 +18,15 @@
   function getColors() {
     return document.body.classList.contains("theme-day") ? lightColors : darkColors;
   }
-  document.body.style.backgroundColor = getColors()[index];
+  function applyBackground() {
+    document.documentElement.style.setProperty("--page-background", getColors()[index]);
+  }
+  document.addEventListener("gg-theme-change", applyBackground);
+  applyBackground();
 
   button.addEventListener("click", function () {
     index = (index + 1) % colors.length;
-    document.body.style.backgroundColor = getColors()[index];
+    applyBackground();
     try {
       localStorage.setItem("gg-bg-index", String(index));
     } catch (e) {
